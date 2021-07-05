@@ -92,7 +92,6 @@ img {
 }
 
 .set-element {
-  overflow: hidden;
   margin-bottom: var(--set-gap);
   margin-right: var(--set-gap);
 }
@@ -311,7 +310,9 @@ img {
 
 .features-icon-wraper {
   display: flex;
-  padding: 25px 100px;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
   margin-bottom: var(--set-gap);
   background: var(--primary-bg-color);
   border-radius: 4px;
@@ -518,11 +519,12 @@ img {
 }
 
 .portfolio-works-link {
+  display: block;
   color: inherit;
 }
 
-.portfolio-works-item:hover,
-.portfolio-works-item:focus {
+.portfolio-works-link:hover,
+.portfolio-works-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
